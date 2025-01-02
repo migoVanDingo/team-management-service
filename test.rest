@@ -1,0 +1,10 @@
+###
+# Create Team
+POST http://localhost:5015/api/team
+Content-Type: application/json
+
+{
+  "name": "Test Team",
+  "description": "This is a test team",
+  "user_id": "USER0N69GJ5MEZFLYR6L30X9X"
+}

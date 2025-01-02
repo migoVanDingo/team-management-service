@@ -16,10 +16,10 @@ app = Flask(__name__)
 CORS(app)
 
 #register blueprints
-from api.user.user_api import user_api # type: ignore
-from api.user_action.user_action_api import user_action_api # type: ignore
-app.register_blueprint(user_api, url_prefix='/api')
-app.register_blueprint(user_action_api, url_prefix='/api')
+from api.team.team_api import team_api # type: ignore
+
+app.register_blueprint(team_api, url_prefix='/api')
+
 
 
 @app.before_request
